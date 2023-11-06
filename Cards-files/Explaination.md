@@ -14,7 +14,7 @@ This document provides an overview and details of the Service Proposal Cards web
 
 ## Overview
 
-The Service Proposal Cards webpage is designed to showcase various services using cards. It's created using HTML for structuring the page and CSS for styling.
+The Service Proposal Cards webpage is designed to Showcase various services using cards. It's created using HTML for structuring the page and CSS for styling.
 
 ## Features
 
@@ -31,7 +31,7 @@ To get started with the Service Proposal Cards project, follow these steps:
 
 2. Open the `index.html` file in your web browser or web development environment.
 
-3. Customize the card content, styles, and GitHub link as needed for your own project.
+3. Customize the Card content, styles, and GitHub link as needed for your own project.
 
 ## Usage
 
@@ -51,4 +51,4 @@ Feel free to contribute and enhance the project further with additional features
 
 ## License
 
-[MIT License](https://github.com/DhyaanKanoja11/Cards-/blob/main/LICENSE)
+[Project's License](https://github.com/DhyaanKanoja11/Cards-/blob/main/LICENSE)
