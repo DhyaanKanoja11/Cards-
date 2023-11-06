@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(bg.svg);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+.card {
+    background: url('background.svg');
+    background-size: cover;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #5f6b78, #0056b3);
+    transform: scaleX(0);
+    transform-origin: 0% 50%;
+    transition: transform 0.3s ease;
+    z-index: -1;
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #007BFF, #0056b3);
+    color: #fff;
+}
+
+.card:hover:before {
+    transform: scaleX(1);
+}
+
+.icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color:      #a6d1ff; /* Icon color */
+}
+
+.card h2 {
+    color: #333;
+    font-size: 24px; /* Title font size */
+}
+
+.card p {
+    color: #080808;
+    padding: 20px;
+}
+
+.learn-more {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s;
+    font-weight: bold; /* Make the text bold on hover */
+}
+
+.learn-more:hover {
+    color: #0056b3;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 123, 255, 0.3); /* Semi-transparent overlay */
+    border-radius: 20px;
+    display: none;
+}
+
+.card:hover .overlay {
+    display: block; /* Show overlay on hover */
+    transition: background 0.3s;
+}
+
+/* Card rotation effect */
+.card-container:hover .card:not(:hover) {
+    transform: rotate(5deg);
+}
+
+.card-container:hover .card:not(:hover):hover {
+    transform: rotate(-5deg);
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: #007BFF; /* Link color in normal state */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    color: #0056b3; /* Link color on hover */
+}
+
+a:active {
+    color: #003d80; /* Link color when clicked */
+}
